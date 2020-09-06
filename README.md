@@ -13,3 +13,9 @@ echo "obj/" >> .dockerignore
 ```
 dotnet watch run
 ```
+4. Deployment
+4.1 Build and deploy manually
+```
+dotnet publish -c Release -o published
+dotnet ./published/webapp.dll
+```
