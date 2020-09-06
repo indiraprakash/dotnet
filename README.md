@@ -40,3 +40,7 @@ docker build -t "urname/webapp" .
     COPY --from=build-env /app/out .
     ENTRYPOINT ["dotnet", "webapp.dll"]
 ```
+5. Run project
+```
+docker run -i -t  -p 8080:80 --name myapp webapp:latest
+```
